@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    >
+
+
+    <group android:checkableBehavior="single" android:visible="true"
+        >
+        <item
+            android:id="@+id/homeoption"
+            android:icon="@drawable/home"
+            android:title="Home"
+            android:textColor="#093453"/>
+        <item
+            android:id="@+id/addoption"
+            android:icon="@drawable/addbookings"
+            android:title="Add Halls"
+            />
+        <item
+            android:id="@+id/viewoption"
+            android:icon="@drawable/viewbookings"
+            android:title="View halls booking" />
+        <item
+            android:id="@+id/requestsoption"
+            android:icon="@drawable/pending"
+            android:title="pending requests"
+            />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

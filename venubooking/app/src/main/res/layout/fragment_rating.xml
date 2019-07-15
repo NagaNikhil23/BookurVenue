@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="panduchinnu.venubooking.Rating">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate us:"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:maxWidth="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     />
+
+
+</LinearLayout>
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Queries/Sugestions:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+             />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:background="#ccc"
+            android:inputType="textMultiLine"
+             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_weight="1"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

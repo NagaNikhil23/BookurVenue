@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="panduchinnu.venubooking.profilecustfragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundg">
+
+        <LinearLayout
+        android:weightSum="11"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name :"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+                <EditText
+                android:id="@+id/proe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#093453" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/pro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password :"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:id="@+id/proe2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="#093453" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pro3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Id :"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/proe3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/pro4"
+                    android:ems="10"
+                    android:textColor="#093453" />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pro4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/proe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#093453" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <Button
+            android:id="@+id/probutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <Button
+            android:id="@+id/probutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="panduchinnu.venubooking.MapsFrag">
+
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchplace11"
+                android:hint="Enter the place you want to search"
+                />
+
+            <ImageButton
+                android:id="@+id/search11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_search_black_24dp"
+                />
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/mapfrag"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/linearLayout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="*click on map to mark a place"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/viewmap">
+                    <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:id="@+id/satellite"
+                        android:text="Satellite_View"
+                        android:textColor="#550000"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"/>
+                    <RadioButton
+                        android:id="@+id/normal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Normal_View"
+                        android:textColor="#550000"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/get11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mark My Location" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/save"
+                        android:text="Save Marked Location \n and \n leave this page"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

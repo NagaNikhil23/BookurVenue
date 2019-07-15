@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myfrontpage"
+    tools:context="panduchinnu.venubooking.MainActivity">
+
+<!--
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nikhil"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_marginTop="124dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/cusbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="71dp"
+        android:background="#507794"
+        android:fontFamily="Arial"
+        android:textColor="#ffffff"
+        android:text="Customer login"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ownbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cusbut"
+        android:layout_alignLeft="@+id/cusbut"
+        android:layout_alignRight="@+id/cusbut"
+        android:layout_alignStart="@+id/cusbut"
+        android:layout_below="@+id/cusbut"
+        android:layout_marginTop="33dp"
+        android:fontFamily="Arial"
+        android:text="Owner login"
+        android:background="#507794"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

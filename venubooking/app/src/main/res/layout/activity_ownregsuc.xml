@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundg"
+    tools:context="panduchinnu.venubooking.ownregsuc">
+
+
+    <TextView
+        android:id="@+id/suc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Registration completed successfully....!!!!!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/suc2"
+        android:layout_alignStart="@+id/suc2" />
+
+    <TextView
+        android:id="@+id/suc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thanks for registering with us"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/suc1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sucb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="OK"
+        android:layout_below="@+id/suc2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

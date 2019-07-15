@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Cushome"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/Cusaddr"
+            android:icon="@drawable/addbookings"
+            android:title="Add Booking" />
+        <item
+            android:id="@+id/Cusview"
+            android:icon="@drawable/viewbookings"
+            android:title="View Bookings" />
+        <item
+            android:id="@+id/Cusedit"
+            android:icon="@drawable/pending"
+            android:title="Pending Bookings" />
+        <item
+            android:id="@+id/Cuspro"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/Cuslogout"
+            android:icon="@drawable/logout"
+            android:title="Log Out" />
+    </group>
+
+</menu>
